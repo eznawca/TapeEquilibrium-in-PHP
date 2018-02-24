@@ -21,4 +21,4 @@ function solution($A) {
 $A = [3,1,2,4,3]; // 1
 $A2 = [-7,1,-6]; // 0
 
-echo solution($A);
+echo solution($A2);
