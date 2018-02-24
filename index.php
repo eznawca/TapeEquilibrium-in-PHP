@@ -9,11 +9,11 @@ function solution($A) {
     $part_right = (float)array_sum($A) - $part_left;
     $min = abs($part_left - $part_right);
     for ($i = 1; $i < $len - 1; $i++) {
-        $part_left += (float)$A[$i];
-        $part_right -= (float)$A[$i];
-		$abs = abs($part_left - $part_right);
-		if ($abs == 0) return 0;
-		if ($abs < $min) $min = $abs;
+	$part_left += (float)$A[$i];
+	$part_right -= (float)$A[$i];
+	$abs = abs($part_left - $part_right);
+	if ($abs == 0) return 0;
+	if ($abs < $min) $min = $abs;
     }
     return (int)$min;    
 }
